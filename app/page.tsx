@@ -1,29 +1,39 @@
+import TechMarquee from "@/components/builtwith";
+import { FAQ } from "@/components/faq";
+import Features from "@/components/features";
+import { Footer } from "@/components/footer";
+import { Hero } from "@/components/hero";
+import { Newsletter } from "@/components/newsletter";
+import Templates from "@/components/templates";
+
 export default function Home() {
   return (
-    <main className="flex justify-center items-center h-screen flex-col">
-      <section>
-        <div className="pb-10">
-          <h1 className="text-7xl text-center font-bold">Coming Soon!</h1>
-          <p className="text-center pt-4">
-            Subscribe to get notified when we launch.
-          </p>
+    <main className="min-h-screen">
+      <div className="relative w-full overflow-hidden">
+        <Hero />
+      </div>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* <div className="py-8 sm:py-12">
+          <TechMarquee />
+        </div> */}
+
+        <div className="py-12 sm:py-16">
+          <Templates />
         </div>
-        <div className="">
-          <form className="bg-gray-100 flex p-2 rounded-full justify-between">
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full bg-gray-100 rounded-full pl-4"
-            />
-            <button
-              type="submit"
-              className=" rounded-full text-center bg-purple-500 text-white px-5 py-3"
-            >
-              Subscribe
-            </button>
-          </form>
+
+        <div className="py-12 sm:py-16">
+          <Features />
         </div>
-      </section>
+
+        <div className="py-12 sm:py-16">
+          <FAQ />
+        </div>
+      </div>
+
+      <div className="mt-8">
+        <Newsletter />
+      </div>
     </main>
   );
 }
