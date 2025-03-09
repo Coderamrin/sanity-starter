@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "./ui/badge";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const templates = [
   {

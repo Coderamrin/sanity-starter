@@ -12,7 +12,7 @@ export function FAQ() {
         Frequently Asked Questions
       </h2>
       <p className="text-muted-foreground text-center">
-        If you have any questions, please don't hesitate to contact us.
+        If you have any questions, please don&apos;t hesitate to contact us.
       </p>
 
       <Accordion
@@ -36,7 +36,7 @@ export function FAQ() {
         <AccordionItem value="item-3">
           <AccordionTrigger>Is it animated?</AccordionTrigger>
           <AccordionContent>
-            Yes. It's animated by default, but you can disable it if you prefer.
+            Yes. It&apos;s animated by default, but you can disable it if you prefer.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

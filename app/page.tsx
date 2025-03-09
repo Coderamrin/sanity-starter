@@ -1,7 +1,7 @@
-import TechMarquee from "@/components/builtwith";
+// import TechMarquee from "@/components/builtwith";
 import { FAQ } from "@/components/faq";
 import Features from "@/components/features";
-import { Footer } from "@/components/footer";
+// import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { Newsletter } from "@/components/newsletter";
 import Templates from "@/components/templates";
