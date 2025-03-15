@@ -11,15 +11,18 @@ export function Hero() {
         <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-purple-500 to-blue-500 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" />
       </div>
 
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+      <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pt-32 lg:flex lg:px-8 lg:pt-40">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
           <div className="flex items-center gap-x-4">
-            <Badge variant="secondary" className="rounded-full bg-transparent border-2 border-purple-500/20 font-normal">
+            <Badge
+              variant="secondary"
+              className="rounded-full bg-transparent border-2 border-purple-500/20 font-normal"
+            >
               Best Sanity Templates
             </Badge>
           </div>
-          <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-6xl bg-clip-text">
-            Build faster with Sanity Starter templates
+          <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-6xl !leading-tight ">
+            Jumpstart Your Development with Sanity Templates
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
             Launch your next project faster with our collection of professional
@@ -27,34 +30,24 @@ export function Hero() {
             practices for content modeling.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <Link href="/templates">
-              <Button
-                size="lg"
-                className="rounded-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
-              >
-                Browse Templates
-              </Button>
-            </Link>
-            <Link href="/submit-template">
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full border-2"
-              >
-                Submit Template
-              </Button>
-            </Link>
+            <Button
+              size="lg"
+              className="rounded-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+              asChild
+            >
+              <Link href="/#templates">Browse Templates</Link>
+            </Button>
           </div>
         </div>
 
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-          <div className="relative flex-none">
+          <div className="relative flex-none p-3 bg-white/5 shadow-2xl ring-1 ring-white/10 rounded-md">
             <Image
               src="/hero-image.png"
               alt="Sanity Studio interface showcase"
               width={1200}
               height={800}
-              className="w-auto h-[400px] lg:h-[450px] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 object-cover"
+              className="w-auto  rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 object-cover"
               priority
             />
           </div>
