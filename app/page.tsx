@@ -6,6 +6,13 @@ import { Hero } from "@/components/hero";
 import { Newsletter } from "@/components/newsletter";
 import Templates from "@/components/templates";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SanityStarters - Directory of Best Sanity Templates",
+  description: "Get your site live in no time with Sanity Templates",
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen">
