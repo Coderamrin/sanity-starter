@@ -5,6 +5,41 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+const faqData = [
+  {
+    question: "Are the templates free to use?",
+    answer:
+      "Some templates are free, while others may be available for purchase. Each template’s pricing details are mentioned on its page.",
+  },
+  {
+    question: "Can I use the templates for commercial purposes?",
+    answer:
+      "Yes, you can use the templates for commercial purposes. However, you have to keep the footer credit link.",
+  },
+
+  {
+    question: "How do I get the templates?",
+    answer:
+      "You can download the templates from this website. You can also get the free templates from GitHub.",
+  },
+
+  {
+    question: "Can I customize the templates?",
+    answer:
+      "Absolutely! Each template is designed to be flexible and customizable to match your project's unique requirements.",
+  },
+  {
+    question: "What tech stack do these templates use?",
+    answer:
+      "Our templates are built using modern frameworks like Next.js, Tailwind CSS, and other popular technologies to ensure scalability and performance.",
+  },
+  {
+    question: "Do these templates support internationalization (i18n)?",
+    answer:
+      "No, not yet. But we will add this feature in the future. If you need this feature, please let us know.",
+  },
+];
+
 export function FAQ() {
   return (
     <section id="faq" className="scroll-mt-20">
@@ -20,25 +55,12 @@ export function FAQ() {
         collapsible
         className=" w-full max-w-2xl mx-auto mt-10"
       >
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-2">
-          <AccordionTrigger>Is it styled?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It comes with default styles that matches the other
-            components&apos; aesthetic.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-3">
-          <AccordionTrigger>Is it animated?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It&apos;s animated by default, but you can disable it if you prefer.
-          </AccordionContent>
-        </AccordionItem>
+        {faqData.map((faq) => (
+          <AccordionItem key={faq.question} value={faq.question}>
+            <AccordionTrigger>{faq.question}</AccordionTrigger>
+            <AccordionContent>{faq.answer}</AccordionContent>
+          </AccordionItem>
+        ))}
       </Accordion>
     </section>
   );

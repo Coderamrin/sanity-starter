@@ -2,41 +2,35 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "./ui/badge";
 import { ArrowRight } from "lucide-react";
-import { i } from "framer-motion/client";
 import { cn } from "@/lib/utils";
 
 const templates = [
   {
     title: "Blog Starter",
     description:
-      "A fully featured blog template with categories, authors, comments, and SEO optimization. Perfect for content creators and publishers.",
+      "A fully featured blog template with categories, authors, and SEO optimization. Perfect for content creators and publishers.",
     price: "$49.99",
     rating: 4.8,
     reviews: 124,
     category: "Blog",
-    features: ["Next.js 14", "TypeScript", "Comments System", "SEO Optimized"],
+    features: ["Next.js 14", "TypeScript", "SEO Optimized"],
     link: "/templates/blog-starter",
-    available: true,
+    available: false,
   },
   {
-    title: "E-commerce Store",
+    title: "SaaS Starter",
     description:
-      "Complete e-commerce solution with product management, cart, checkout, and order tracking. Built with modern tech stack.",
+      "A fully featured SaaS template with authentication, payment, and CMS. Perfect for SaaS startups.",
     price: "$79.99",
     rating: 4.9,
     reviews: 89,
-    category: "E-commerce",
-    features: [
-      "Next.js 14",
-      "Stripe Integration",
-      "Shopping Cart",
-      "Order Management",
-    ],
+    category: "SaaS",
+    features: ["Next.js 15", "Stripe Integration", "CMS", "Authentication", "Blog"],
     link: "/templates/ecommerce-store",
     available: false,
   },
   {
-    title: "Portfolio Pro",
+    title: "Portfolio Starter",
     description:
       "Showcase your work with this beautiful portfolio template. Includes project galleries, case studies, and contact forms.",
     price: "$39.99",

@@ -16,13 +16,14 @@ export function Hero() {
           <div className="flex items-center gap-x-4">
             <Badge
               variant="secondary"
-              className="rounded-full bg-transparent border-2 border-purple-500/20 font-normal"
+              className="rounded-full bg-transparent border-2 border-purple-500/20 font-normal hover:bg-transparent"
             >
               Best Sanity Templates
             </Badge>
           </div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-6xl !leading-tight ">
-            Jumpstart Your Development with Sanity Templates
+            {/* Boost Your Development with Sanity Templates */}
+            Get your site live in no time with Sanity Templates
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
             Launch your next project faster with our collection of professional
