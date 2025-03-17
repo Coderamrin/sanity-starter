@@ -24,10 +24,10 @@ const MenuData = [
     name: "Templates",
     href: "/#templates",
   },
-  {
-    name: "Use Cases",
-    href: "/#usecase",
-  },
+  // {
+  //   name: "Use Cases",
+  //   href: "/#usecase",
+  // },
   {
     name: "Blog",
     href: "/blog",
